@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Psicología</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Malla Interactiva Psicología</h1>
+  <div class="grid">
+    <button class="ramo" id="neurobiologia" data-prereqs="">Neurobiología</button>
+    <button class="ramo" id="psicofisiologia" data-prereqs="neurobiologia">Psicofisiología</button>
+
+    <button class="ramo" id="psicologia_social_i" data-prereqs="">Psicología Social I</button>
+    <button class="ramo" id="psicologia_social_ii" data-prereqs="psicologia_social_i">Psicología Social II</button>
+    <button class="ramo" id="problemas_psicosociales" data-prereqs="psicologia_social_ii">Problemas Psicosociales en Chile</button>
+    <button class="ramo" id="psicologia_comunitaria" data-prereqs="problemas_psicosociales">Psicología Comunitaria</button>
+    <button class="ramo" id="taller_intervencion" data-prereqs="psicologia_comunitaria">Taller de Intervención Psicosocial</button>
+
+    <button class="ramo" id="psicoanalitica_i" data-prereqs="">Psicología Psicoanalítica I</button>
+    <button class="ramo" id="psicoanalitica_ii" data-prereqs="psicoanalitica_i">Psicología Psicoanalítica II</button>
+
+    <button class="ramo" id="psicopatologia" data-prereqs="">Psicopatología General</button>
+    <button class="ramo" id="psiquiatria_adultos" data-prereqs="psicopatologia">Psiquiatría Adultos</button>
+    <button class="ramo" id="psicologia_clinica" data-prereqs="psiquiatria_adultos">Psicología Clínica</button>
+
+    <button class="ramo" id="ciclo_vital_i" data-prereqs="">Ciclo Vital I</button>
+    <button class="ramo" id="ciclo_vital_ii" data-prereqs="ciclo_vital_i">Ciclo Vital II</button>
+
+    <button class="ramo" id="estadistica" data-prereqs="">Introducción a la Estadística</button>
+    <button class="ramo" id="metodologia_cuantitativa_i" data-prereqs="estadistica">Metodología Cuantitativa I</button>
+    <button class="ramo" id="metodologia_cuantitativa_ii" data-prereqs="metodologia_cuantitativa_i">Metodología Cuantitativa II</button>
+    
+    <!-- Puedes seguir agregando más ramos siguiendo el mismo patrón -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
